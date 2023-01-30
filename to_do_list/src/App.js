@@ -35,17 +35,24 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={(e) => this.addTodo(e)}>
-          <input
-            placeholder="Add Todo"
-            value={this.state.text}
-            onChange={(e) => {
-              this.updateValue(e);
-            }}
-          />
-          <button type="submit">Add Todo</button>
-        </form>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <form onSubmit={(e) => this.addTodo(e)}>
+              <input
+                id="userInput"
+                placeholder="Add Todo"
+                value={this.state.text}
+                onChange={(e) => {
+                  this.updateValue(e);
+                }}
+              />
+              <button id="enter" type="submit">
+                <i class="fas fa-pencil-alt"></i>
+              </button>
+            </form>
+          </div>
+        </div>
         <TodoList todos={this.state.todos} removeTodo={this.removeTodo} />
       </div>
     );
@@ -59,20 +66,24 @@ class TodoList extends React.Component {
 
   render() {
     return (
-      <ul>
-        {this.props.todos.map((todo, i) => {
-          return (
-            <li
-              onClick={() => {
-                this.removeItem(todo, i);
-              }}
-              key={i}
-            >
-              {todo}
-            </li>
-          );
-        })}
-      </ul>
+      <div class="row">
+        <div class="listItems col-12">
+          <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+            {this.props.todos.map((todo, i) => {
+              return (
+                <li
+                  onClick={() => {
+                    this.removeItem(todo, i);
+                  }}
+                  key={i}
+                >
+                  {todo}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
     );
   }
 }

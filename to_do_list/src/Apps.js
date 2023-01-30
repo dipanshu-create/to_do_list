@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
 const { Component } = React,
   { render } = ReactDOM,
   rootNode = document.getElementById("root");
