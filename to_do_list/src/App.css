@@ -41,6 +41,8 @@ p {
 ul {
   text-align: left;
   margin-top: 20px;
+  margin-left: 170px;
+  margin-right: 240px;
 }
 
 li {
@@ -70,13 +72,13 @@ li > button {
   border: none;
   float: right;
   color: #025f70;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 input {
   border-radius: 5px;
   min-width: 65%;
-  padding: 5px;
+  padding: 10px;
   border: none;
 }
 
