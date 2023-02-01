@@ -2,6 +2,7 @@ import "./App.css";
 import Apps from "./Apps";
 import React from "react";
 import ReactDOM from "react-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const { Component } = React,
   { render } = ReactDOM,
   rootNode = document.getElementById("root");
@@ -48,7 +49,7 @@ class App extends React.Component {
                 }}
               />
               <button id="enter" type="submit">
-                <i class="fas fa-pencil-alt"></i>
+                <div class="blank"></div>
               </button>
             </form>
           </div>

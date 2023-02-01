@@ -18,11 +18,17 @@ h1 {
 p {
   font-weight: 600;
 }
-
+.blank {
+  height: 14px;
+  width: 10px;
+}
 #enter {
   border: none;
-  padding: 5px 15px;
+  padding: 5px 10px;
   border-radius: 5px;
+  margin-left: 5px;
+  width: 50px;
+  height: 39px;
   color: #04a1bf;
   background-color: #025f70;
   transition: all 0.75s ease;
@@ -32,8 +38,7 @@ p {
   -o-transition: all 0.75 ease;
   font-weight: normal;
 }
-
-#enter:hover {
+*/ #enter:hover {
   background-color: #02798f;
   color: #ffcd5d;
 }
